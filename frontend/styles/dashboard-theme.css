@@ -1,0 +1,66 @@
+:root {
+  --dashboard-gradient: linear-gradient(135deg, #6EE7B7 0%, #3B82F6 50%, #A78BFA 100%);
+  --dashboard-card-bg: linear-gradient(120deg, #fdf6e3 0%, #e0e7ff 100%);
+  --dashboard-card-shadow: 0 8px 32px 0 rgba(55, 65, 81, 0.18);
+  --dashboard-card-radius: 1.5rem;
+  --dashboard-accent: #6366F1;
+  --dashboard-accent2: #F59E42;
+  --dashboard-accent3: #10B981;
+  --dashboard-accent4: #F472B6;
+  --dashboard-accent5: #FBBF24;
+  --dashboard-bg: linear-gradient(120deg, #f0f9ff 0%, #e0e7ff 100%);
+}
+
+.dashboard-bg {
+  background: var(--dashboard-bg);
+}
+.dashboard-hero {
+  background: var(--dashboard-gradient);
+  color: white;
+  border-radius: 2rem;
+  box-shadow: 0 10px 40px 0 rgba(59, 130, 246, 0.13);
+}
+.dashboard-card {
+  background: var(--dashboard-card-bg);
+  box-shadow: var(--dashboard-card-shadow);
+  border-radius: var(--dashboard-card-radius);
+  border: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.dashboard-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 16px 40px 0 rgba(99, 102, 241, 0.16);
+}
+.dashboard-stat {
+  background: linear-gradient(120deg, #fdf6e3 0%, #e0e7ff 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 24px 0 rgba(16, 185, 129, 0.14);
+  color: #1e293b;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.dashboard-stat-accent1 { border-top: 5px solid var(--dashboard-accent); }
+.dashboard-stat-accent2 { border-top: 5px solid var(--dashboard-accent2); }
+.dashboard-stat-accent3 { border-top: 5px solid var(--dashboard-accent3); }
+.dashboard-stat-accent4 { border-top: 5px solid var(--dashboard-accent4); }
+.dashboard-stat-accent5 { border-top: 5px solid var(--dashboard-accent5); }
+.dashboard-stat:hover {
+  box-shadow: 0 12px 36px 0 rgba(245, 158, 66, 0.13);
+  transform: scale(1.04);
+}
+.dashboard-title {
+  font-size: 2.4rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  background: linear-gradient(90deg, #3B82F6 0%, #A78BFA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.dashboard-section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #6366F1;
+  margin-bottom: 1.2rem;
+  letter-spacing: -0.5px;
+}
